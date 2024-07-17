@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Renderização de imagens altomaicas</title>
+    <style>
+        mark {
+            background-color: rgb(107, 187, 224);
+        }
+        body {
+            background-color: rgb(208, 230, 245);
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color: rgb(29, 109, 94);">Imagem de Renderização</h1>
+    <p style="color: rgb(6, 104, 104);">Aqui você encontra uma imagem que dependendo do tamanho da tela ela <mark>se ajusta sozinha. </mark><a href="#pop">Pagina test</a></p>
+    <abbr title="Mulher no penhasco">
+        <Picture>
+            <source media="(max-width: 750px)" srcset="img/paisagem-p.png" type="image/png">
+            <source media="(max-width: 1050px)" srcset="img/paisagem-m.png" type="image/png">
+           <img src="img/paisagem-g.png" alt="">
+        </Picture>
+        <ul>
+            <li><abbr title="primeiro img depois source tudo dentro de Picture da maior para menor">Imagem ajustavel</abbr></li>
+            <li><abbr title="style body background-color e pronto">Fundo colorido</abbr></li>
+            <li><abbr title="style color">Cor h1 e p</abbr></li>
+            <li><abbr title="style mark{ background-color} tudo abaixo do title">Marcar texto</abbr></li>
+        </ul>
+    </abbr>
+    <p>O sol brilhava intensamente naquela manhã de verão, enquanto as crianças corriam pelo parque, rindo e brincando. O vento suave balançava as folhas das árvores, criando uma sinfonia natural que acalmava o espírito. Perto do lago, um grupo de patos nadava tranquilamente, observando os visitantes com curiosidade. Tudo parecia em perfeita harmonia, como se o tempo tivesse parado para apreciar a beleza daquele momento simples, mas inesquecível.</p>
+    <h2 id="pop">Teste neve</h2>
+
+    <p>HTML, ou HyperText Markup Language, é a linguagem padrão usada para criar páginas da web. Com HTML, você pode estruturar seu conteúdo usando tags como `&lt;p&gt;` para parágrafos, `&lt;h1&gt;` para cabeçalhos e `&lt;a&gt;` para links. Cada elemento HTML pode ter atributos que definem suas propriedades e comportamentos. Ao combinar HTML com CSS para estilo e JavaScript para interatividade, você pode criar websites dinâmicos e visualmente atraentes. É a base essencial para qualquer desenvolvedor web.</p>
+</body>
+</html>
