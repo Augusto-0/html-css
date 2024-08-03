@@ -1,0 +1,28 @@
+@charset "UTF=8";
+
+/*Atualizado::after
+-------------------
+Pequenas Telas: até 576px
+Celular Pequeno: de 576px até 768px
+Celular Grande: de 768px até 992px
+Tablet: de 992px até 1200px
+Desktop: de 1200px até 1440px
+Grandes Telas: acima de 1440px*/
+
+@media screen and (min-width: 768px) {
+    span#burguer {
+        display: none;
+    }
+
+    menu {
+        display: block;
+    }
+
+    menu > ul > li {
+        display: inline-block;
+    }
+
+    main {
+        width: 768px;
+    }
+}
