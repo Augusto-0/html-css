@@ -6,61 +6,70 @@
     padding: 0px;
 }
 
-body,
-html {
-    background-color: lightgray;
+body, html {
+    background-color: lightgrey;
 }
 
 header {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(107, 107, 107);
-    height: 110px;
+    background-color: rgb(134, 134, 134);
 }
 
-header h1 {
+header > h1 {
+    padding: 10px;
     text-align: center;
+}
+
+span#burguer {
+    background-color: rgb(48, 48, 48);
+    display: block;
     color: white;
+    text-align: center;
     padding: 10px;
-    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.548);
+    cursor: pointer;
 }
 
-header ul {
+span#burguer:hover {
+    background-color: white;
+    color: black;
+}
+
+menu {
+    display: none;
+}
+
+menu > ul {
+    list-style-type: none;
+}
+
+menu > ul > li > a {
+    display: block;
     padding: 10px;
-}
-
-header li {
-    display: inline-block;
-    background-color: rgb(71, 71, 71);
-    padding: 10px
-}
-
-header li:hover {
-    background-color: rgb(124, 121, 121);
-    transition: .5s;
-}
-
-header li>a {
     text-decoration: none;
+    text-align: center;
+    background-color: rgb(87, 87, 87);
     color: white;
+    border-top: 2px solid gray;
+}
+
+menu ul > li > a:hover {
+    background-color: gray;
 }
 
 main {
+    width: 90vw;
     background-color: white;
-    max-width: 800px;
     margin: auto;
-    padding: 15px;
-    margin-top: 10px;
+    padding: 10px;
     border-radius: 10px;
-    box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.555);
+    margin-top: 10px;
 }
 
-main h2 {
-    text-align: center;
-    padding-bottom: 10px;
+article > h2 {
+    padding-bottom: 20px;
 }
 
-main p {
-    font-family: serif;
-    margin: 10px;
-    font-size: 1.3em;
+article > p {
+    text-align: justify;
+    margin-bottom: 20px;
+    text-indent: 20px;
 }
